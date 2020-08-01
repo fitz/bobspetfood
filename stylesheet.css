@@ -1,7 +1,6 @@
-
 body { 
     font-family : Helvetica, sans-serif, Arial; 
-    font-size: 18px;
+
     font-weight : normal; 
     color : #000000; 
     background: white;
@@ -13,33 +12,49 @@ body {
 }
 
 .myimg img {
-    max-height: 90vh;
+    max-height: 60vh;
     max-width: 100%;
 }
 
 .fttext {
-    font-size: 2.5vw;
+    font-size: max(14px, min(2vw, 30px));
     
+}
+
+@keyframes blinkingText{
+    0%{     color: #FF0000;    }
+    49%{    color: #FF0000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #FF0000;    }
+}
+
+.ftwarning {
+    font-size: max(14px, min(2vw, 30px));
+    font-weight: bold;
+    color: red;
+    animation:blinkingText 1.2s infinite;    
 }
 
 .ftbigtext {
     font-weight: bold;
-    font-size: 4vw;
+    font-size: max(24px, min(3vw, 48px));
 }
 
 #container {
     display: table;
-    width: 85%;
+    width: 90%;
     text-align: center;
     margin: 10px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+    max-width: 977px;
 }
 
 #sadwarning {
     display: table;
-    width: 65%;
+    width: 60%;
     text-align: center;
     margin: 10px;
     margin-left: auto;
