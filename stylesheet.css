@@ -1,0 +1,49 @@
+
+body { 
+    font-family : Helvetica, sans-serif, Arial; 
+    font-size: 18px;
+    font-weight : normal; 
+    color : #000000; 
+    background: white;
+}
+
+.myimg {
+    display: table-row;
+    text-align: center;
+}
+
+.myimg img {
+    max-height: 90vh;
+    max-width: 100%;
+}
+
+.fttext {
+    font-size: 2.5vw;
+    
+}
+
+.ftbigtext {
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+#container {
+    display: table;
+    width: 85%;
+    text-align: center;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#sadwarning {
+    display: table;
+    width: 65%;
+    text-align: center;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
